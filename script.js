@@ -4,7 +4,7 @@ function format_data(textString) {
 
 function format_into_cards(textString1, textString2) {
     return textString1.map((word, i) => {
-        return `- ${word} #card\n\t- ${textString2[1]}`
+        return `- ${word} #card\n\t- ${textString2[i]}`
     }).join('\n')
 }
 
